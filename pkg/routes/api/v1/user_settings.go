@@ -51,6 +51,7 @@ type UserSettings struct {
 	OverdueTasksRemindersEnabled bool `json:"overdue_tasks_reminders_enabled"`
 	// The time when the daily summary of overdue tasks will be sent via email.
 	OverdueTasksRemindersTime string `json:"overdue_tasks_reminders_time" valid:"time,required"`
+	DefaultDueTime            string `json:"default_due_time" valid:"time"`
 	// If a task is created without a specified project this value should be used. Applies
 	// to tasks made directly in API and from clients.
 	DefaultProjectID int64 `json:"default_project_id"`
@@ -215,6 +216,7 @@ func UpdateGeneralUserSettings(c echo.Context) error {
 	user.Language = us.Language
 	user.Timezone = us.Timezone
 	user.OverdueTasksRemindersTime = us.OverdueTasksRemindersTime
+	user.DefaultDueTime = us.DefaultDueTime
 	user.FrontendSettings = us.FrontendSettings
 
 	_, err = user2.UpdateUser(s, user, true)

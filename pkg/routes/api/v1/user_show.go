@@ -79,6 +79,7 @@ func UserShow(c echo.Context) error {
 			Language:                     u.Language,
 			Timezone:                     u.Timezone,
 			OverdueTasksRemindersTime:    u.OverdueTasksRemindersTime,
+			DefaultDueTime:               u.DefaultDueTime,
 			FrontendSettings:             u.FrontendSettings,
 			ExtraSettingsLinks:           u.ExtraSettingsLinks,
 		},

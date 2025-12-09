@@ -143,6 +143,25 @@
 					>
 				</label>
 			</div>
+			<div
+				class="field"
+			>
+				<label
+					for="defaultDueTime"
+					class="two-col"
+				>
+					<span>
+						{{ $t('user.settings.general.defaultDueTime') }}
+					</span>
+					<input
+						id="defaultDueTime"
+						v-model="settings.defaultDueTime"
+						class="input"
+						type="time"
+						@keyup.enter="updateSettings"
+					>
+				</label>
+			</div>
 		</div>
 	</Card>
 

@@ -102,6 +102,7 @@
         "defaultView": "Default view",
         "timezone": "Time zone",
         "overdueTasksRemindersTime": "Overdue tasks reminder email time",
+        "defaultDueTime": "Default due time",
         "filterUsedOnOverview": "Saved filter used on the overview page",
         "minimumPriority": "Minimum visible task priority",
         "dateDisplay": "Date display format",

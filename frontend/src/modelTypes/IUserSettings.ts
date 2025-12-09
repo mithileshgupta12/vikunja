@@ -40,6 +40,7 @@ export interface IUserSettings extends IAbstract {
 	discoverableByEmail: boolean
 	overdueTasksRemindersEnabled: boolean
 	overdueTasksRemindersTime: undefined | string | Date
+	defaultDueTime: undefined | string | Date
 	defaultProjectId: undefined | IProject['id']
 	weekStart: 0 | 1 | 2 | 3 | 4 | 5 | 6
 	timezone: string
